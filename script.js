@@ -21,7 +21,7 @@ async function fetchPokemonData(pokemon) {
     pokeData.types.forEach(ele => {
         console.log(ele.type.name + " ");
     });
-    const imgPath = 'https://pokeres.bastionbot.org/images/pokemon/' + pokeData.id + '.png';
+    const imgPath = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/' + pokeData.id + '.png';
     let Pokemon = {
         name: pokeData.name,
         id: pokeData.id,
